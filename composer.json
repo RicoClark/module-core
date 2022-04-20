@@ -1,0 +1,23 @@
+{
+  "name": "droppery/module-core",
+  "description": "Droppery Core for Magento 2",
+  "type": "magento2-module",
+  "version": "1.4.11",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Droppery",
+      "email": "support@droppery.com",
+      "homepage": "https://www.droppery.com",
+      "role": "Technical Support"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Droppery\\Core\\": ""
+    }
+  }
+}

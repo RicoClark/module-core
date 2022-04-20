@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Droppery_Core::menu" title="Droppery" module="Droppery_Core" sortOrder="50" resource="Droppery_Core::menu"/>
+        <add id="Droppery_Core::documentation" title="Documentations" module="Droppery_Core" sortOrder="5" resource="Droppery_Core::documentation" parent="Droppery_Core::menu"/>
+<!--        <add id="Droppery_Core::marketplace" title="Droppery Marketplace" module="Droppery_Core" sortOrder="10" action="adminhtml/system_config/edit/section/mpmarketplace" resource="Droppery_Core::marketplace" parent="Droppery_Core::documentation"/>-->
+        <add id="Droppery_Core::userguide" title="User Guides" module="Droppery_Core" sortOrder="20" action="mpcore/index/userguide" resource="Droppery_Core::userguide" parent="Droppery_Core::documentation"/>
+    </menu>
+</config>
