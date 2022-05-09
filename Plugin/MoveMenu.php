@@ -12,7 +12,7 @@ use Droppery\Core\Helper\AbstractData;
  */
 class MoveMenu
 {
-    const MAGEPLAZA_CORE = 'Droppery_Core::menu';
+    const DROPPERY_CORE = 'Droppery_Core::menu';
 
     /**
      * @var AbstractData
@@ -41,10 +41,10 @@ class MoveMenu
             if (strpos($itemParams['id'], 'Droppery_') !== false
                 && isset($itemParams['parent'])
                 && strpos($itemParams['parent'], 'Droppery_') === false) {
-                $itemParams['parent'] = self::MAGEPLAZA_CORE;
+                $itemParams['parent'] = self::DROPPERY_CORE;
             }
-        } elseif ((isset($itemParams['id']) && $itemParams['id'] === self::MAGEPLAZA_CORE)
-                || (isset($itemParams['parent']) && $itemParams['parent'] === self::MAGEPLAZA_CORE)) {
+        } elseif ((isset($itemParams['id']) && $itemParams['id'] === self::DROPPERY_CORE)
+                || (isset($itemParams['parent']) && $itemParams['parent'] === self::DROPPERY_CORE)) {
             $itemParams['removed'] = true;
         }
 

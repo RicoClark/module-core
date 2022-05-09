@@ -20,7 +20,7 @@ class Activate extends DataObject
      * Localhost maybe not active via https
      * @inheritdoc
      */
-    const MAGEPLAZA_ACTIVE_URL = 'https://dashboard.droppery.com/license/index/activate/?isAjax=true';
+    const DROPPERY_ACTIVE_URL = 'https://dashboard.droppery.com/license/index/activate/?isAjax=true';
 
     /**
      * @var CurlFactory
@@ -54,7 +54,7 @@ class Activate extends DataObject
         $curl = $this->curlFactory->create();
         $curl->write(
             Zend_Http_Client::POST,
-            self::MAGEPLAZA_ACTIVE_URL,
+            self::DROPPERY_ACTIVE_URL,
             '1.1',
             [],
             http_build_query($params, null, '&')

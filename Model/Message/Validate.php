@@ -79,7 +79,7 @@ class Validate implements MessageInterface
      */
     public function getIdentity()
     {
-        return hash('md5', 'MAGEPLAZA_VALIDATE_MESSAGE');
+        return hash('md5', 'DROPPERY_VALIDATE_MESSAGE');
     }
 
     /**

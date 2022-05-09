@@ -12,7 +12,7 @@ class Feed extends \Magento\AdminNotification\Model\Feed
     /**
      * @inheritdoc
      */
-    const MAGEPLAZA_FEED_URL = 'www.droppery.com/notifications.xml';
+    const DROPPERY_FEED_URL = 'www.droppery.com/notifications.xml';
 
     /**
      * @inheritdoc
@@ -21,7 +21,7 @@ class Feed extends \Magento\AdminNotification\Model\Feed
     {
         $httpPath = $this->_backendConfig->isSetFlag(self::XML_USE_HTTPS_PATH) ? 'https://' : 'http://';
         if ($this->_feedUrl === null) {
-            $this->_feedUrl = $httpPath . self::MAGEPLAZA_FEED_URL;
+            $this->_feedUrl = $httpPath . self::DROPPERY_FEED_URL;
         }
 
         return $this->_feedUrl;
